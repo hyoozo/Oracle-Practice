@@ -1,3 +1,4 @@
+--[10/28] 오라클 테이블 생성 연습 예제
 --1. 회원 정보를 저장하는 테이블을 MEMBER 란 이름으로 생성한다.
 --   MEMBER 테이블은 다음과 같은 칼럼으로 구성된다. (PK: 기본키라고 한다. PRIMARY KEY)
 create table MEMBER(
