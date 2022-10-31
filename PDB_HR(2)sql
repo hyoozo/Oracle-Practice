@@ -91,5 +91,15 @@ SELECT EMPLOYEE_ID, LOFRIST_NAME
 FROM EMPLOYEES
 WHERE LOWER (FIRST_NAME) LIKE '%a%'; --???
 
+--ESCAPE
+--LIKE 연산으로 '%' 나 '_' 가 포함된 문자를 검색하고자 할때 사용된다.
+-- '%'SK '_' 앞에 ESCAPE로 특수문자를 지정하면 검색할 수 있다.
+-- 특수문자는 아무거나 상관없이 사용 가능하다.
+-- 구문 마지막에 ESCAPE에 사용할 문자열만 지정해주면 '_' SK '%'를 검색에 사용할 수 있게 도와준다.
+
+-- 사원 테이블에서 직무
+SELECT*FROM EMPLOYEES
+WHERE JOB_ID LIKE '__\_P%' ESCAPE '\';
+
 
 
